@@ -1,6 +1,7 @@
 {% extends 'base.html' %}
 
 {% block content %}
+<<<<<<< HEAD
 
   <!-- Hero Header -->
   <header class="py-5 text-center container">
@@ -22,80 +23,71 @@
         <div class="card card-product h-100 p-3">
           <div class="product-img-box mb-3">
             <i class="bi bi-cpu fs-1 text-tech-green"></i>
+=======
+<main class="py-5">
+  <div class="container">
+    <!-- Hero Section -->
+    <section class="p-5 mb-5 rounded-4 position-relative overflow-hidden" style="background: linear-gradient(135deg, rgba(142, 57, 179, 0.25), rgba(22, 25, 36, 0.95)); border: 1px solid var(--border-color);">
+      <div class="row align-items-center gy-4">
+        <div class="col-lg-7">
+          <span class="badge badge-pink mb-3 px-3 py-2">Setup & Periféricos de Alta Performance</span>
+          <h1 class="display-4 fw-bold text-white mb-3">
+            Evolua seu ecossistema tech com a <span class="brand-title">KeroTech</span>.
+          </h1>
+          <p class="lead text-secondary mb-4">
+            Hardware selecionado, periféricos mecânicos e ergonomia para devs, gamers e criadores.
+          </p>
+          <div class="d-flex gap-3">
+            <a href="{% url 'produtos' %}" class="btn btn-tech-buy px-4 py-2">
+              <i class="bi bi-grid-fill me-2"></i> Ver Produtos
+            </a>
+            <a href="#vantagens" class="btn btn-secondary px-4 py-2">
+              Conhecer Vantagens
+            </a>
+>>>>>>> 587fc56340f2c9887d63016fa0fb0f07f34ee5f9
           </div>
-          <div class="card-body d-flex flex-column p-0">
-            <div class="d-flex justify-content-between align-items-start mb-2">
-              <span class="badge badge-pink">Hardware</span>
-              <span class="badge text-bg-dark border border-secondary">Em Estoque</span>
-            </div>
-            <h5 class="card-title text-white fw-bold">Placa Dev ESP32-S3 Pro</h5>
-            <p class="card-text text-secondary small flex-grow-1">Microcontrolador dual-core com conectividade Wi-Fi/Bluetooth e pinagem GPIO estendida.</p>
-            <div class="pt-3 border-top border-secondary border-opacity-25 mt-2">
-              <div class="d-flex justify-content-between align-items-center mb-3">
-                <span class="small text-secondary">Preço à vista</span>
-                <span class="fs-4 fw-bold text-tech-green">R$ 189,90</span>
-              </div>
-              <button class="btn btn-tech-buy w-100 py-2">
-                <i class="bi bi-bag-plus me-2"></i>Comprar
-              </button>
-            </div>
+        </div>
+        <div class="col-lg-5 text-center">
+          <div class="p-4 rounded-4" style="background-color: var(--bg-surface-elevated); border: 1px solid var(--border-color);">
+            <i class="bi bi-cpu-fill text-tech-green" style="font-size: 5rem;"></i>
+            <h4 class="text-white mt-3">Pronto para o Upgrade?</h4>
+            <p class="text-secondary small mb-0">Entrega rápida para todo o Brasil e garantia estendida.</p>
           </div>
         </div>
       </div>
+    </section>
 
-      <!-- Item 2 -->
-      <div class="col">
-        <div class="card card-product h-100 p-3">
-          <div class="product-img-box mb-3">
-            <i class="bi bi-keyboard fs-1 text-tech-green"></i>
-          </div>
-          <div class="card-body d-flex flex-column p-0">
-            <div class="d-flex justify-content-between align-items-start mb-2">
-              <span class="badge badge-pink">Periféricos</span>
-              <span class="badge text-bg-warning">Oferta</span>
-            </div>
-            <h5 class="card-title text-white fw-bold">Teclado Mecânico 60% RGB</h5>
-            <p class="card-text text-secondary small flex-grow-1">Switches táteis hot-swappable, corpo em alumínio e iluminação personalizável.</p>
-            <div class="pt-3 border-top border-secondary border-opacity-25 mt-2">
-              <div class="d-flex justify-content-between align-items-center mb-3">
-                <span class="small text-secondary">Preço à vista</span>
-                <span class="fs-4 fw-bold text-tech-green">R$ 449,00</span>
-              </div>
-              <button class="btn btn-tech-buy w-100 py-2">
-                <i class="bi bi-bag-plus me-2"></i>Comprar
-              </button>
-            </div>
-          </div>
+    <!-- Cards de Benefícios -->
+    <section id="vantagens" class="row g-4 py-3">
+      <div class="col-md-4">
+        <div class="card-product p-4 h-100">
+          <i class="bi bi-lightning-charge-fill text-tech-green fs-2 mb-2"></i>
+          <h5 class="text-white">Envio Expresso</h5>
+          <p class="text-secondary small mb-0">Seus componentes enviados em até 24h úteis para não travar o seu setup.</p>
         </div>
       </div>
-
-      <!-- Item 3 -->
-      <div class="col">
-        <div class="card card-product h-100 p-3">
-          <div class="product-img-box mb-3">
-            <i class="bi bi-terminal fs-1 text-tech-green"></i>
-          </div>
-          <div class="card-body d-flex flex-column p-0">
-            <div class="d-flex justify-content-between align-items-start mb-2">
-              <span class="badge badge-pink">Maker</span>
-              <span class="badge text-bg-dark border border-secondary">Lançamento</span>
-            </div>
-            <h5 class="card-title text-white fw-bold">Chassi Terminal Portátil Cyberdeck</h5>
-            <p class="card-text text-secondary small flex-grow-1">Estrutura modular para displays ultra-wide e barramento de alimentação portátil.</p>
-            <div class="pt-3 border-top border-secondary border-opacity-25 mt-2">
-              <div class="d-flex justify-content-between align-items-center mb-3">
-                <span class="small text-secondary">Preço à vista</span>
-                <span class="fs-4 fw-bold text-tech-green">R$ 820,00</span>
-              </div>
-              <button class="btn btn-tech-buy w-100 py-2">
-                <i class="bi bi-bag-plus me-2"></i>Comprar
-              </button>
-            </div>
-          </div>
+      <div class="col-md-4">
+        <div class="card-product p-4 h-100">
+          <i class="bi bi-shield-check text-tech-green fs-2 mb-2"></i>
+          <h5 class="text-white">Garantia Tech</h5>
+          <p class="text-secondary small mb-0">Equipamentos testados com suporte especializado e procedência garantida.</p>
         </div>
       </div>
+<<<<<<< HEAD
 
     </div>
   </main>
 
+=======
+      <div class="col-md-4">
+        <div class="card-product p-4 h-100">
+          <i class="bi bi-credit-card-2-front text-tech-green fs-2 mb-2"></i>
+          <h5 class="text-white">Condições Especiais</h5>
+          <p class="text-secondary small mb-0">Descontos no Pix e parcelamento facilitado em até 12x sem juros.</p>
+        </div>
+      </div>
+    </section>
+  </div>
+</main>
+>>>>>>> 587fc56340f2c9887d63016fa0fb0f07f34ee5f9
 {% endblock %}
